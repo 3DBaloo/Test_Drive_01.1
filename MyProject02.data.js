@@ -18,8 +18,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'D:/UnrialObekts/01/01/НОвый тестовый проект/WaytSpher/Binaries/HTML5/MyProject02.data';
-    var REMOTE_PACKAGE_BASE = 'MyProject02.data';
+    var PACKAGE_NAME = 'https://dl.dropboxusercontent.com/s/sh1kr0up8boxy44/MyProject02.data?dl=0';
+    var REMOTE_PACKAGE_BASE = 'https://dl.dropboxusercontent.com/s/sh1kr0up8boxy44/MyProject02.data?dl=0';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -149,10 +149,10 @@ Module['FS_createPath']('/MyProject02/Content', 'Paks', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_D:/UnrialObekts/01/01/НОвый тестовый проект/WaytSpher/Binaries/HTML5/MyProject02.data');
+              Module['removeRunDependency']('datafile_D:/UnrialObekts/01/01/ГЌГЋГўГ»Г© ГІГҐГ±ГІГ®ГўГ»Г© ГЇГ°Г®ГҐГЄГІ/WaytSpher/Binaries/HTML5/MyProject02.data');
 
     };
-    Module['addRunDependency']('datafile_D:/UnrialObekts/01/01/НОвый тестовый проект/WaytSpher/Binaries/HTML5/MyProject02.data');
+    Module['addRunDependency']('datafile_D:/UnrialObekts/01/01/ГЌГЋГўГ»Г© ГІГҐГ±ГІГ®ГўГ»Г© ГЇГ°Г®ГҐГЄГІ/WaytSpher/Binaries/HTML5/MyProject02.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
